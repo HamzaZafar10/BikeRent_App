@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserted Item"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:gravity="center">
+
+        </TextView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="20dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_ShopM"
+            android:layout_marginLeft="50dp"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iamge17"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#3F51B5">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-70dp"
+            android:id="@+id/camaraM"
+            android:src="@drawable/ic_baseline_camera_alt_24">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:inputType="textPersonName"
+            android:hint="Enter a Product Title"
+            android:id="@+id/TileProductShopM"
+            android:gravity="center">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:hint="Enter a user Description"
+            android:id="@+id/descShopM"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter a Product SalePrice"
+            android:inputType="number"
+            android:id="@+id/SalePriceShopM"
+            android:gravity="center">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@drawable/round"
+                android:textSize="20sp"
+                android:layout_margin="20dp"
+                android:id="@+id/SubmitM"
+                ></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

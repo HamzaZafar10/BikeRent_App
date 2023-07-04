@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerConform"
+            android:layout_width="match_parent"
+            android:layout_height="541dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amaount"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/paymentCardText">
+            </TextView>
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" price"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/paymentCard">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 % text"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/TextCardPayment">
+            </TextView>
+
+            <View
+                android:layout_width="85dp"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" price"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/TextParsentage">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grand total       "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/GrandTotalText">
+            </TextView>
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="20dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:id="@+id/GrandTotalPayment">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ConformButton"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Conform Button"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigation_draw"
+    android:orientation="vertical"
+    tools:openDrawer="start"
+    tools:context=".AdminPanel">
+    <include
+        layout="@layout/framelayout_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </include>
+
+<com.google.android.material.navigation.NavigationView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/navigationBar"
+    app:menu="@menu/menu_desgine"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/header"
+    >
+
+</com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
